@@ -40,7 +40,7 @@
 
 	if(!$mail->Send()) {
 		echo 'Sorry, we cant send your message at this time! Please try again later.';
-		console.log('Mailer error: ' . $mail->ErrorInfo);
+		echo 'Mailer error: ' . $mail->ErrorInfo;
 	} 
 	else {
 		echo 'Your message has been sent. I will get back to you as soon as possible!';
