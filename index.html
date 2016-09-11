@@ -774,8 +774,8 @@ _________________________________________________________ -->
                     <div class="row">
 
                         <div class="col-md-8 col-md-offset-2">
-                            <!--<form id="contact-form" action="contact.php" method="post">-->
-                            <form id="htmlform" method="get" runat="server">
+                            <form id="contactform" method="post">
+                            <!--<form id="htmlform" method="get" runat="server">-->
 
                                 <div class="messages">
 
@@ -786,12 +786,14 @@ _________________________________________________________ -->
                                     <div class="row">
                                         <div class="col-md-6">
                                             <input type="text" name="name" id="name" class="form-control" placeholder="Your firstname *" required="required">
+                                            <input type="hidden" name="_subject" value="Website contact" />
+                                            <input type="text" name="_gotcha" style="display:none" />
                                         </div>
                                         <div class="col-md-6">
                                             <input type="text" name="surname" id="surname" class="form-control" placeholder="Your lastname *" required="required">
                                         </div>
                                         <div class="col-md-6">
-                                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email *" required="required">
+                                            <input type="text" name="_replyto" id="email" class="form-control" placeholder="Your email *" required="required">
                                         </div>
                                         <div class="col-md-6">
                                             <input type="text" name="phone" id="phone" class="form-control" placeholder="Your phone">
@@ -965,7 +967,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
         
     </script>
 
-    <script>
+    <script>/*
         function ajax_post(){
         // Create our XMLHttpRequest object
             var hr = new XMLHttpRequest();
@@ -1003,7 +1005,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
             hr.send(); // Actually execute the request
             
             return false;
-        }
+        }*/
+      
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'aneesh1993' + '@' + 'gmail' + '.' + 'com');
+
 
     </script>
 
