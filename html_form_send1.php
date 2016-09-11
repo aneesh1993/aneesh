@@ -23,7 +23,7 @@
 	$mail->SMTPAuth = true; 					// enable SMTP authentication
 	$mail->SMTPSecure = "tls"; 					//"tls"; // sets the prefix to the servier
 
-	$mail->Host = "aspmx.l.google.com"    //"smtp.gmail.com"; 			// sets GMAIL as the SMTP server
+	$mail->Host = "smtp.gmail.com"; 			// sets GMAIL as the SMTP server
 	$mail->Port = 587; 							// 465(ssl)---587(tls)set the SMTP port for the GMAIL server
 
 	$mail->Username = "portfoliowebsite1993@gmail.com"; 	// GMAIL username
