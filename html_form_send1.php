@@ -2,7 +2,7 @@
 
 	require(__DIR__.'\PHPMailer-master\PHPMailer-master\class.phpmailer.php');
 	require(__DIR__.'\PHPMailer-master\PHPMailer-master\PHPMailerAutoload.php');
-	include 'my_password.php';
+	//include 'my_password.php';
 	
 	$name = $_GET['name']; // required
 	$surname = $_GET['surname']; // required
@@ -27,7 +27,7 @@
 	$mail->Port = 587; 							// set the SMTP port for the GMAIL server
 
 	$mail->Username = "portfoliowebsite1993@gmail.com"; 	// GMAIL username
-	$mail->Password = $password; 				// GMAIL password
+	$mail->Password = "myresumesite"; 				// GMAIL password
 
 	$mail->From = "portfoliowebsite1993@gmail"; 		// "name@yourdomain.com";
 	$mail->FromName = "Mr. ".$name;		  		// set from Name
@@ -40,7 +40,7 @@
 
 	if(!$mail->Send()) {
 		echo 'Sorry, we cant send your message at this time! Please try again later.';
-		echo 'Mailer error: ' . $mail->ErrorInfo;
+		//echo 'Mailer error: ' . $mail->ErrorInfo;
 	} 
 	else {
 		echo 'Your message has been sent. I will get back to you as soon as possible!';
