@@ -21,10 +21,10 @@
 	$mail->IsSMTP();
 
 	$mail->SMTPAuth = true; 					// enable SMTP authentication
-	$mail->SMTPSecure = "tls"; 					//"ssl"; // sets the prefix to the servier
+	$mail->SMTPSecure = "ssl"; 					//"tls"; // sets the prefix to the servier
 
 	$mail->Host = "smtp.gmail.com"; 			// sets GMAIL as the SMTP server
-	$mail->Port = 587; 							// set the SMTP port for the GMAIL server
+	$mail->Port = 465; 							// 587set the SMTP port for the GMAIL server
 
 	$mail->Username = "portfoliowebsite1993@gmail.com"; 	// GMAIL username
 	$mail->Password = $password; 				// GMAIL password
