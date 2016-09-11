@@ -1,7 +1,7 @@
 <?php
 
-	require(__DIR__.'\PHPMailer-master\PHPMailer-master\class.phpmailer.php');
-	require(__DIR__.'\PHPMailer-master\PHPMailer-master\PHPMailerAutoload.php');
+	require('\PHPMailer-master\PHPMailer-master\class.phpmailer.php');
+	require('\PHPMailer-master\PHPMailer-master\PHPMailerAutoload.php');
 	include 'my_password.php';
 	
 	$name = $_GET['name']; // required
