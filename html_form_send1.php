@@ -27,7 +27,7 @@
 	$mail->Port = 587; 							// set the SMTP port for the GMAIL server
 
 	$mail->Username = "portfoliowebsite1993@gmail.com"; 	// GMAIL username
-	$mail->Password = $password; 				// GMAIL password
+	$mail->Password = "myresumesite";//$password; 				// GMAIL password
 
 	$mail->From = "portfoliowebsite1993@gmail"; 		// "name@yourdomain.com";
 	$mail->FromName = "Mr. ".$name;		  		// set from Name
